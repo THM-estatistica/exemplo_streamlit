@@ -30,7 +30,6 @@ def load_data(file):
 if uploaded_file is not None:
     df = load_data(uploaded_file)
     st.success(f"Dados carregados: {dataset_option}")
-    st.write(df.head())
 else:
     st.warning("Por favor, faça o upload de um arquivo CSV para continuar.")
 
